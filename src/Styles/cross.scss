@@ -1,0 +1,161 @@
+.cross{
+  background-color: #052302;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+
+.cross__par-cross-1{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  left: 10%;
+  top: 13%;
+}
+.cross__par-cross-2{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  left: 10%;
+  top: 50%;
+}
+
+  .cross-par-null-1{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    right: 10%;
+    top: 50%;
+  }
+  .cross-par-null-2{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    right: 10%;
+    top: 13%;
+  }
+
+
+  .pace{
+    display: flex;
+    font-size: 4rem;
+    margin-left: 2rem;
+
+    img{
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+
+
+}
+
+.cross-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 30rem;
+  position: relative;
+  .cross-wrapper__block{
+   border: 1px solid red;
+   width: 30%;
+   height: 13rem;
+   transition: .5s ease;
+
+    .cross-wrapper__block--filled{
+      animation: grow .5s ease;
+      transition: .5s ease;
+      width: 100%;
+      height: 100%;
+     img{
+       width: 100%;
+       height: 100%;
+       object-fit: contain;
+     }
+     @keyframes grow {
+       0%{
+         transform: scale(0);
+       }
+       100%{
+         transform: scale(1);
+       }
+     }
+
+    &:hover{
+      transform: scale(1.1);
+    }
+
+    }
+
+
+    &:hover{
+      cursor: pointer;
+      background-color: gray;
+
+    }
+
+
+
+  }
+
+
+  .active{
+    background-color: orangered;
+    border: 1px solid red;
+    width: 30%;
+    height: 13rem;
+    transition: .5s ease;
+    &:hover{
+      cursor: pointer;
+      background-color: gray;
+    }
+  }
+
+}
+
+.reset{
+  display: flex;
+  justify-content: center;
+  button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+
+.result{
+
+  .result__all-paces-done{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(122, 115, 115, .9);
+
+    h2{
+     font-size: 6rem;
+    }
+
+    button{
+      width: 40rem;
+      height: 8rem;
+      font-size: 4rem;
+      border-radius: 5px;
+
+    }
+
+      }
+
+}
+
+
